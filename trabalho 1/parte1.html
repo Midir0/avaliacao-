@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="check()">Enviar</button>
+
+    <p>1+1?</p>
+    <input type="text" id="p1">
+
+    <p>2+2?</p>
+    <input type="text" id="p2">
+
+    <p>3+3?</p>
+    <input type="text" id="p3">
+
+    <p>4+4?</p>
+    <input type="text" id="p4">
+
+    <p>5+5?</p>
+    <input type="text" id="p5">
+
+    <p>6+6?</p>
+    <input type="text" id="p6">
+
+    <p>7+7?</p>
+    <input type="text" id="p7">
+    
+    <p>8+8?</p>
+    <input type="text" id="p8">
+    
+    <p>9+9?</p>
+    <input type="text" id="p9">
+    
+    <p>10+10?</p>
+    <input type="text" id="p10">
+
+    <br> 
+    <img src="download.png">
+
+    <script>
+        points = 0
+        let nome= prompt('seu nome') 
+        let r1 = 2;
+        let c1 = document.getElementById('p1') 
+
+        let r2 = 4;
+        let c2 = document.getElementById('p2')
+
+        let r3 = 6;
+        let c3 = document.getElementById('p3')
+
+        let r4 = 8;
+        let c4 = document.getElementById('p4') 
+
+        let r5 = 10;
+        let c5 = document.getElementById('p5')
+
+        let r6 = 12;
+        let c6 = document.getElementById('p6')
+ 
+        let r7 = 14;
+        let c7 = document.getElementById('p7') 
+
+        let r8 = 16;
+        let c8 = document.getElementById('p8')
+
+        let r9 = 18;
+        let c9 = document.getElementById('p9')
+
+        let r10 = 20;
+        let c10 = document.getElementById('p10')
+        function check(){
+            if(r1 == c1.value){
+                points++;
+            }
+
+            if(r2 == c2.value){
+                points++;
+            }
+
+            if(r3 == c3.value){
+                points++;
+            }
+
+            if(r4 == c4.value){
+                points++;
+            }
+
+            if(r5 == c5.value){
+                points++;
+            }
+            if(r6 == c6.value){
+                points++;
+            }
+            if(r7 == c7.value){
+                points++;
+            }
+            if(r8 == c8.value){
+                points++;
+            }
+            if(r9 == c9.value){
+                points++;
+            }
+            if(r10 == c10.value){
+                points++;
+            }
+            alert(nome + " tem " + points + " pontos ")
+            points=0
+        }
+    
+    </script>
+
+</body>
+</html>
